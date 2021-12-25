@@ -2,7 +2,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:task_planner_app/widgets/active_projects.dart';
+import 'package:task_planner_app/widgets/components/active_projects.dart';
 
 class Body extends StatelessWidget {
   const Body({

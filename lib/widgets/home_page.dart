@@ -4,7 +4,10 @@ import 'package:draggable_home/draggable_home.dart';
 import 'package:flutter/material.dart';
 
 import 'body.dart';
-import 'custom_header.dart';
+import 'components/actions_icons.dart';
+import 'components/custom_header.dart';
+import 'components/leading_icon.dart';
+import 'components/title_appbar.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -14,10 +17,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  bool _pinned = true;
-  bool _snap = false;
-  bool _floating = false;
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -36,48 +35,6 @@ class _MyHomePageState extends State<MyHomePage> {
           alwaysShowLeadingAndAction: true,
         ),
       ),
-    );
-  }
-}
-
-class TitleAppBar extends StatelessWidget {
-  const TitleAppBar({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      'Bill Gates',
-      style: TextStyle(color: Colors.black),
-    );
-  }
-}
-
-class ActionsIcons extends StatelessWidget {
-  const ActionsIcons({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Icon(
-      Icons.search,
-      color: Colors.black,
-    );
-  }
-}
-
-class LeadingIcon extends StatelessWidget {
-  const LeadingIcon({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Icon(
-      Icons.menu,
-      color: Colors.black,
     );
   }
 }
